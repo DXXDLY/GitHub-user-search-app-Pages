@@ -1,0 +1,238 @@
+.profile__wrapper {
+    padding: 48px;
+    background: #FEFEFE;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+    border-radius: 15px;
+    max-width: 730px;
+    margin-top: 24px;
+}
+
+.profile__header {
+    display: flex;
+}
+
+.common_block {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile__data {
+    padding: 15px 0;
+    display: flex;
+    background: #F6F8FF;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+
+.profile_name {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 39px;
+    color: #2B3442;
+}
+
+.profile_id a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0079FF;
+    text-decoration: none;
+}
+
+.profile_bio {
+    margin-top: 20px;
+    margin-bottom: 32px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #4B6A9B;
+    opacity: 0.75;
+}
+
+.profile_joined {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: right;
+    color: #697C9A;
+}
+
+.profile__details {
+    width: 100%;
+}
+
+.profile__img {
+    margin-right: 37px;
+    width: 117px;
+    height: 117px;
+}
+
+.profile__img img {
+    width: 100%;
+    border-radius: 100%;
+}
+
+.profile_repository p,
+.profile_followers p,
+.profile_following p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: #4B6A9B;
+}
+
+.profile_repository span,
+.profile_followers span,
+.profile_following span {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: #2B3442;
+}
+
+.profile__bottom {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    width: 80%;
+    margin: auto;
+    margin-top: 37px;
+}
+
+.profile_geo,
+.profile_twitter,
+.profile_link,
+.profile_company {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #4B6A9B;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+}
+
+.profile_link a,.profile_twitter a {
+    color: #4B6A9B;
+    text-decoration: none;
+    border-bottom: 1px solid #4B6A9B;
+}
+
+.profile_geo img,
+.profile_twitter img,
+.profile_link img,
+.profile_company img {
+    margin-right: 16px;
+}
+
+/* DARK */
+
+.profile__wrapper_dark {
+    padding: 48px;
+    background: #1E2A47;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+    border-radius: 15px;
+    max-width: 730px;
+    margin-top: 24px;
+}
+
+.profile_name_dark {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 39px;
+    color: white;
+}
+
+.profile_joined_dark {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: right;
+    color: white;
+}
+
+.profile_bio_dark {
+    margin-top: 20px;
+    margin-bottom: 32px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: white;
+    opacity: 0.75;
+}
+
+.profile__data_dark {
+    padding: 15px 0;
+    display: flex;
+    background: #141D2F;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+
+.profile_repository_dark p,
+.profile_followers_dark p,
+.profile_following_dark p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: white;
+}
+
+.profile_repository_dark span,
+.profile_followers_dark span,
+.profile_following_dark span {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.profile_geo_dark,
+.profile_twitter_dark,
+.profile_link_dark,
+.profile_company_dark {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+}
+
+.profile_geo_dark img,
+.profile_twitter_dark img,
+.profile_link_dark img,
+.profile_company_dark img {
+    margin-right: 16px;
+    color: white;
+}
+
+.profile_link_dark a,.profile_twitter_dark a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+
+@media (max-width: 767px) {
+    .common_block {
+        display: block;
+    }
+
+    .profile_joined,
+    .profile_joined_dark {
+        text-align: left;
+    }
+
+    .profile__bottom {
+        width: 100%;
+    }
+}
+
+@media (max-width: 649px) {
+    .profile__bottom {
+        display: block;
+    }
+}
